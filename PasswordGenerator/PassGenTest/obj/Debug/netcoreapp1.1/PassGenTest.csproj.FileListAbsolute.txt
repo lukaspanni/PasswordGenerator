@@ -1,0 +1,15 @@
+e:\Dokumente\Visual Studio 2017\Projects\PasswordGenerator\PassGenTest\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+e:\Dokumente\Visual Studio 2017\Projects\PasswordGenerator\PassGenTest\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+e:\Dokumente\Visual Studio 2017\Projects\PasswordGenerator\PassGenTest\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+e:\Dokumente\Visual Studio 2017\Projects\PasswordGenerator\PassGenTest\bin\Debug\netcoreapp1.1\PassGenTest.deps.json
+e:\Dokumente\Visual Studio 2017\Projects\PasswordGenerator\PassGenTest\bin\Debug\netcoreapp1.1\PassGenTest.runtimeconfig.json
+e:\Dokumente\Visual Studio 2017\Projects\PasswordGenerator\PassGenTest\bin\Debug\netcoreapp1.1\PassGenTest.runtimeconfig.dev.json
+e:\Dokumente\Visual Studio 2017\Projects\PasswordGenerator\PassGenTest\bin\Debug\netcoreapp1.1\PassGenTest.dll
+e:\Dokumente\Visual Studio 2017\Projects\PasswordGenerator\PassGenTest\bin\Debug\netcoreapp1.1\PassGenTest.pdb
+e:\Dokumente\Visual Studio 2017\Projects\PasswordGenerator\PassGenTest\bin\Debug\netcoreapp1.1\PasswordGeneratorFunctions.dll
+e:\Dokumente\Visual Studio 2017\Projects\PasswordGenerator\PassGenTest\bin\Debug\netcoreapp1.1\PasswordGeneratorFunctions.pdb
+e:\Dokumente\Visual Studio 2017\Projects\PasswordGenerator\PassGenTest\obj\Debug\netcoreapp1.1\PassGenTest.csprojResolveAssemblyReference.cache
+e:\Dokumente\Visual Studio 2017\Projects\PasswordGenerator\PassGenTest\obj\Debug\netcoreapp1.1\PassGenTest.csproj.CoreCompileInputs.cache
+e:\Dokumente\Visual Studio 2017\Projects\PasswordGenerator\PassGenTest\obj\Debug\netcoreapp1.1\PassGenTest.AssemblyInfo.cs
+e:\Dokumente\Visual Studio 2017\Projects\PasswordGenerator\PassGenTest\obj\Debug\netcoreapp1.1\PassGenTest.dll
+e:\Dokumente\Visual Studio 2017\Projects\PasswordGenerator\PassGenTest\obj\Debug\netcoreapp1.1\PassGenTest.pdb
