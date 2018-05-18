@@ -2863,6 +2863,18 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
+      "PassGenGUI/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "PasswordGeneratorFunctions": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PassGenGUI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PassGenGUI.dll": {}
+        }
+      },
       "PasswordGeneratorFunctions/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
@@ -8534,6 +8546,11 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
+    "PassGenGUI/1.0.0": {
+      "type": "project",
+      "path": "../PassGenGUI/PassGenGUI.csproj",
+      "msbuildProject": "../PassGenGUI/PassGenGUI.csproj"
+    },
     "PasswordGeneratorFunctions/1.0.0": {
       "type": "project",
       "path": "../PasswordGeneratorFunctions/PasswordGeneratorFunctions.csproj",
@@ -8546,48 +8563,50 @@
       "MSTest.TestFramework >= 1.1.17",
       "Microsoft.NET.Test.Sdk >= 15.3.0-preview-20170425-07",
       "Microsoft.NETCore.App >= 1.1.2",
+      "PassGenGUI >= 1.0.0",
       "PasswordGeneratorFunctions >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Lukas Panni\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
+    "C:\\Users\\Lukas Panni\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "E:\\Dokumente\\Visual Studio 2017\\Projects\\PasswordGenerator\\PassGenTest\\PassGenTest.csproj",
+      "projectUniqueName": "E:\\Dokumente\\Visual Studio 2017\\Projects\\PasswordGenerator\\PasswordGenerator\\PassGenTest\\PassGenTest.csproj",
       "projectName": "PassGenTest",
-      "projectPath": "E:\\Dokumente\\Visual Studio 2017\\Projects\\PasswordGenerator\\PassGenTest\\PassGenTest.csproj",
+      "projectPath": "E:\\Dokumente\\Visual Studio 2017\\Projects\\PasswordGenerator\\PasswordGenerator\\PassGenTest\\PassGenTest.csproj",
       "packagesPath": "C:\\Users\\Lukas Panni\\.nuget\\packages\\",
-      "outputPath": "E:\\Dokumente\\Visual Studio 2017\\Projects\\PasswordGenerator\\PassGenTest\\obj\\",
+      "outputPath": "E:\\Dokumente\\Visual Studio 2017\\Projects\\PasswordGenerator\\PasswordGenerator\\PassGenTest\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
-      ],
       "configFilePaths": [
         "C:\\Users\\Lukas Panni\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "E:\\Dokumente\\Visual Studio 2017\\Projects\\PasswordGenerator\\PasswordGeneratorFunctions\\PasswordGeneratorFunctions.csproj": {
-              "projectPath": "E:\\Dokumente\\Visual Studio 2017\\Projects\\PasswordGenerator\\PasswordGeneratorFunctions\\PasswordGeneratorFunctions.csproj"
+            "E:\\Dokumente\\Visual Studio 2017\\Projects\\PasswordGenerator\\PasswordGenerator\\PassGenGUI\\PassGenGUI.csproj": {
+              "projectPath": "E:\\Dokumente\\Visual Studio 2017\\Projects\\PasswordGenerator\\PasswordGenerator\\PassGenGUI\\PassGenGUI.csproj"
+            },
+            "E:\\Dokumente\\Visual Studio 2017\\Projects\\PasswordGenerator\\PasswordGenerator\\PasswordGeneratorFunctions\\PasswordGeneratorFunctions.csproj": {
+              "projectPath": "E:\\Dokumente\\Visual Studio 2017\\Projects\\PasswordGenerator\\PasswordGenerator\\PasswordGeneratorFunctions\\PasswordGeneratorFunctions.csproj"
             }
           }
         }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
       }
     },
     "frameworks": {

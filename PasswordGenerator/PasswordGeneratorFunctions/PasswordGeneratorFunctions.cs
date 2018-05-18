@@ -1,9 +1,7 @@
 ﻿using System;
 
-namespace PasswordGeneratorFunctions
-{
-    public static class PasswordGeneratorFunctions
-    {
+namespace PasswordGeneratorFunctions{
+    public static class PasswordGeneratorFunctions{
         public static string generatePassword(int length=8) {
             if (length < 1)
                 return null;

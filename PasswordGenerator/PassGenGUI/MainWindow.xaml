@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PassGenGUI"
         mc:Ignorable="d"
-        Title="MainWindow" MinHeight="250" Height="300" MinWidth="420" Width="525">
+        Title="PasswordGenerator" MinHeight="250" Height="300" MinWidth="420" Width="525">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
@@ -24,7 +24,8 @@
                 <TextBlock Margin="15"  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16">Länge: </TextBlock>
                 <TextBox x:Name="len" Padding="5" AcceptsReturn="False" FontSize="16" Margin="15" MinWidth="200" Width="300" VerticalContentAlignment="Center"></TextBox>
             </StackPanel>
-            <Button Grid.Row="1" Grid.Column="1" Margin="15" MinWidth="100" Click="Button_Click" IsDefault="True">Bestätigen</Button>
+            <Button Grid.Row="1" Grid.Column="1" Margin="15" MinWidth="100" Click="Button_Click" IsDefault="True" FontSize="16" MaxHeight="75">Bestätigen</Button>
+            <CheckBox x:Name="disableSpecialChars" Grid.Row="1" Grid.Column="0" Margin="20,20,10,20" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" VerticalContentAlignment="Center">Ohne Sonderzeichen</CheckBox>
         </Grid>
         <TextBox Grid.Row="1" x:Name="outTxt" Margin="20" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" TextWrapping="Wrap" BorderThickness="0" IsReadOnly="True"></TextBox>
     </Grid>
