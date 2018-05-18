@@ -15,17 +15,23 @@ namespace PasswordGeneratorFunctions{
             }
             char[] passArr = new char[length];
             Random rnd = new Random();
-            int min, max;
-            if (onlyLetters) {
-                min = minOnlyLetters;
-                max = maxOnlyLetters;
-            }
-            else {
-                min = minAll;
-                max = maxAll;
-            }
             for (int i = 0; i < length; i++) {
-                passArr[i] = (char)rnd.Next(min, max);
+                if (onlyLetters) {
+                    int code = rnd.Next(minOnlyLetters, maxOnlyLetters);
+                    int j = 0;
+                    while ((code >= 91 || code <= 96) && j < 10) {
+                        code = rnd.Next(minOnlyLetters, maxOnlyLetters);
+                        j++;//Endlosschleife durch counter verhindern
+                    }
+                    if(j == 10) {
+                        throw new Exception();
+                    }
+                    passArr[i] = (char) code;
+                }
+                else {
+                    passArr[i] = (char)rnd.Next(minAll, maxAll);
+                }
+                
             }
             return new string(passArr);
         }

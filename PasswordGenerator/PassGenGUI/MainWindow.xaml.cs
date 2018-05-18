@@ -25,20 +25,25 @@ namespace PassGenGUI {
         }
 
         private void Button_Click(object sender, RoutedEventArgs e) {
-            if (String.IsNullOrWhiteSpace(len.Text))
-                return;
+            if (String.IsNullOrWhiteSpace(len.Text)) {
+                outTxt.Text = "Länge muss größer als 0 sein";
+            }
             try {
                 int length = Int32.Parse(len.Text);
                 if(length > 0) {
-                    outTxt.Text = generatePassword(length);
+                    bool onlyLetters = (bool)cBxOnlyLetters.IsChecked;
+                    outTxt.Text = generatePassword(length,onlyLetters); 
                     System.Windows.Forms.Clipboard.SetText(outTxt.Text);
                 }
                 else {
-                    outTxt.Text = "Failed";
+                    outTxt.Text = "Länge muss größer als 0 sein";
                 }
             }
             catch (FormatException fe) {
                 outTxt.Text = "Nur Zahlen Eingeben";
+            }
+            catch(Exception fe) {
+                outTxt.Text = "Failed";
             }
 
         }
