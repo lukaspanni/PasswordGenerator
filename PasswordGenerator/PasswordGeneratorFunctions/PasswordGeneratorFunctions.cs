@@ -3,6 +3,7 @@
 namespace PasswordGeneratorFunctions{
     public static class PasswordGeneratorFunctions{
 
+
         private static int minAll = 33;
         private static int maxAll = 126;
 
