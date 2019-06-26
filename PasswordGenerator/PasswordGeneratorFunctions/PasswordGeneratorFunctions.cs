@@ -4,11 +4,11 @@ namespace PasswordGeneratorFunctions{
     public static class PasswordGeneratorFunctions{
 
 
-        private static int minAll = 33;
-        private static int maxAll = 126;
+        private static readonly int minAll = 0x21;
+        private static readonly int maxAll = 0x7E;
 
-        private static int minOnlyLetters= 65;
-        private static int maxOnlyLetters = 122;
+        private static readonly int minOnlyLetters= 0x41;
+        private static readonly int maxOnlyLetters = 0x5A;
 
         public static string generatePassword(int length = 8, bool onlyLetters = false) {
             if (length < 1) {
@@ -19,14 +19,7 @@ namespace PasswordGeneratorFunctions{
             for (int i = 0; i < length; i++) {
                 if (onlyLetters) {
                     int code = rnd.Next(minOnlyLetters, maxOnlyLetters);
-                    int j = 0;
-                    while ((code >= 91 || code <= 96) && j < 10) {
-                        code = rnd.Next(minOnlyLetters, maxOnlyLetters);
-                        j++;//Endlosschleife durch counter verhindern
-                    }
-                    if(j == 10) {
-                        throw new Exception();
-                    }
+                    code += rnd.Next(0, 2) == 1 ? 32 : 0;   //random lowercase
                     passArr[i] = (char) code;
                 }
                 else {
